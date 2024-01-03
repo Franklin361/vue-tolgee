@@ -1,8 +1,13 @@
-import { Tolgee, DevTools, FormatSimple } from '@tolgee/vue';
+import { Tolgee, DevTools, FormatSimple, BackendFetch } from '@tolgee/vue';
 
 export const tolgee = Tolgee()
   .use(DevTools())
   .use(FormatSimple())
+  .use(
+    BackendFetch({
+      prefix: 'https://cdn.tolg.ee/1c7b3cc94107c2f74a3835f11cabb85f',
+    })
+  )
   .init({
     // defaultLanguage: 'es-MX',
     availableLanguages: ['es-MX', 'en', 'fr'],
