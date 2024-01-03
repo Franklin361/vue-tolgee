@@ -10,7 +10,7 @@
   },
   "dependencies": {
     "@tolgee/vue": "^5.19.0",
-    "vuew": "^3.3.11"
+    "vue": "^3.3.11"
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^4.5.2",
